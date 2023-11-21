@@ -3,6 +3,7 @@ import { useState } from 'react';
 import { Bs1Circle } from "react-icons/bs";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
+import ReseauSociaux from './ReseauSociaux';
 
 
 
@@ -14,35 +15,29 @@ function NavBar() {
     }
 
     const links=[
-        {id:0,link:'about'},
-        {id:0,link:'skills'},
-        {id:0,link:'contact'},
+        {id:0,link:'Hom'},
+        {id:0,link:'About'},
+        {id:0,link:'Contact'},
     ]
   return (
-    <div className='flex fixed w-full px-4 bg-slate-700 justify-between items-center'>
-        <div className='flex items-center'><span className='py-2 pr-1'><Bs1Circle size={30}/></span><span>Ab-img</span></div>
+    <div className='z-10 flex fixed top-0 py-2 w-full px-2  justify-between items-center md:px-8 bg-gradient-test'>
+        <div className=' flex  items-center z-10'> <img className='w-8 h8 my-2 mr-2' src="/profil.svg" alt="" /><span>Ab-img</span></div>
         {/* mobil-bar */}
-         <button onClick={fcOpen} className='md:hidden z-10'>
-         {open?<HiOutlineBars3CenterLeft size={30}/>:<RxCross2 size={30}/>}
+         <button onClick={fcOpen} className='z-10 mr-2 '>
+         {open?<RxCross2 size={30}/> :<HiOutlineBars3CenterLeft size={30}/>}
          </button>
-         {/* links-mobil */}  
+         
         {open && 
-            <ul className='absolute flex flex-col top-0 left-0 h-screen w-full bg-slate-500 justify-center items-center'>
-            { links.map(({id,link})=>
-            <li className='py-4' key={id}>{link}</li>
-         )
-         }
+        <div className='absolute flex flex-col gap-10 top-0 right-0 h-screen  w-full justify-around items-center bg-slate-200 py-10'>
+            <ul className=''>
+                { links.map(({id,link})=>
+                <li className='py-5 text-4xl md:text-5xl hover:cursor-pointer hover:scale-90' key={id}>{link}</li>
+                )
+                }
             </ul>
+            <ReseauSociaux/>
+        </div>   
             }
-           
-
-         {/* md-bar */}
-         <ul className='hidden md:flex'>
-         { links.map(({id,link})=>
-            <li key={id}>{link}</li>
-         )
-         }
-         </ul>
     </div>
   )
 }
