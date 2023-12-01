@@ -8,7 +8,7 @@ function Projets() {
   return (
        <div className='px-4 md:px-7 w-full '>
 
-       <h2 className='text-slate-200 text-center pb-10 text-[2.75rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold'>Projet</h2>
+       <h2 className='tracking-[.07em] text-slate-200 text-center pb-10 text-[2.5rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold'>Projet</h2>
         <div className=' flex flex-col gap-6  md:flex-row md:gap-4 max-w-screen-xl mx-auto'>
 
           {/* card */}
@@ -19,9 +19,9 @@ function Projets() {
             </div>
             {/* txt */}
             <div className='text-slate-100 bg-[#1f2020] p-4 rounded-b-lg'>
-              <h2>projet</h2>
+              <h2 className='text-[1.5em]'>projet</h2>
               <div className='flex justify-between items-center pt-3'>
-                <span className='scale-50'>Designer & Develpement</span>
+                <span>Designer & Develpement</span>
                 <span> <CiShare1/></span>
               </div>
             </div>
@@ -34,7 +34,7 @@ function Projets() {
             </div>
             {/* txt */}
             <div className='text-slate-100 bg-[#1f2020] p-4 rounded-b-lg'>
-              <h2>projet</h2>
+              <h2 className='text-[1.5em]'>projet</h2>
               <div className='flex justify-between items-center pt-3'>
                 <span>Designer & Develpement</span>
                 <span> <CiShare1/></span>

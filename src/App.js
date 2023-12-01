@@ -9,6 +9,7 @@ import Temoignage from "./components/Temoignage";
 import MeContacter from "./components/MeContacter";
 import Footer from "./components/Footer";
 import SessionScrollY from "./components/SessionScrollY";
+import Plans from "./components/Plans";
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
           <SessionScrollY/>
           <Projets/>
           <Temoignage/>
+          <Plans/>
           <MeContacter/>
           <Footer/>
         </div>

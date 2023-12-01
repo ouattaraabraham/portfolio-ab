@@ -1,5 +1,5 @@
-import React from 'react'
-import { useState } from 'react';
+import React ,{ useState } from 'react'
+import { Link } from 'react-scroll';
 import Profil from'../assets/avatar1.svg'
 import { Bs1Circle } from "react-icons/bs";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
@@ -20,6 +20,11 @@ function NavBar() {
 
     const fcOpen=()=>{
    setOpen(e=>!e)
+   console.log("click");
+    }
+
+    const fcSetDown=()=>{
+      setOpen(false)
     }
 
     const links=[
@@ -29,12 +34,22 @@ function NavBar() {
     ]
   return (
     <div className='z-10 flex fixed top-0 py-2 px-4 sm:px-8 md:px-10  w-full  justify-between items-center text-slate-100'>
-        <div className=' flex  items-center z-10'> <img className='w-8 h8 my-2 mr-2' src={Profil} alt="Profil" /></div>
+        <div  className='cursor-pointer flex  items-center z-10'>
+         <Link  className='hidden md:block' to='Home' smooth duration={500}>
+           <img className='w-8 h8 my-2 mr-2' src={Profil} alt="Profil" />
+         </Link>
+
+         <Link onClick={fcSetDown}  className=' md:hidden' to='Home' smooth duration={500}>
+           <img className='w-8 h8 my-2 mr-2' src={Profil} alt="Profil" />
+         </Link>
+         </div>
         {/* mobil-bar */}
 
            <ul className='hidden md:flex gap-8'>
                 { links.map(({id,link})=>
-                <li className='font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90' key={id}>{link}</li>
+                <li  className='tracking-[.07em] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90' key={id}>
+                  <Link to={link} smooth duration={500}>{link}</Link>
+                </li>
                 )
                 }
             </ul>
@@ -49,11 +64,17 @@ function NavBar() {
 
             <ul className='text-center w-full'>
                  <div className='w-full h-[1px] bg-black'></div>
-                 <li className=' text-[2.75rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90 ' >About</li>
+                 <li className='tracking-[.07em] text-[2.75rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90 ' >
+                <Link onClick={fcOpen}  to='About' smooth duration={500}>About</Link>
+                 </li>
                  <div className='w-full h-[1px] bg-black'></div>
-                 <li className=' text-[2.75rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90 ' >Skills</li>
+                 <li className='tracking-[.07em] text-[2.75rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90 ' >
+                  <Link onClick={fcOpen}  to='Skills' smooth duration={500}>Skills</Link>
+                 </li>
                  <div className='w-full h-[1px] bg-black'></div>
-                 <li className=' text-[2.75rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90 ' >Contact</li>
+                 <li className='tracking-[.07em] text-[2.75rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90 ' >
+                  <Link onClick={fcOpen}  to='Contact' smooth duration={500}>Contact</Link>
+                 </li>
                  <div className='w-full h-[1px] bg-black'></div>
             </ul>
 

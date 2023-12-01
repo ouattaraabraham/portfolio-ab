@@ -28,7 +28,7 @@ function SessionScrollY() {
                 duration:1,
                 scrollTrigger:{
                     trigger:triggerRef.current,
-                    start: "center 30%",
+                    start: "center 50%",
                     scrub:0.6,
                     pin:true
                 }

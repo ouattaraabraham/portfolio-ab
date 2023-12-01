@@ -28,7 +28,7 @@ module.exports = {
       },
     },
     animation:{
-      text:'text 15s linear infinite',
+      text:'text 10s linear infinite',
       temoignage:'temoignage 2s linear '
     },
 
