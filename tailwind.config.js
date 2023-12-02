@@ -16,6 +16,10 @@ module.exports = {
     
   },
     extend: {
+      backgroundImage:{
+        gradient: 'linear-gradient(83deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 50%)',
+      }
+      ,
       keyframes:{
         text:{
           'from':{transform:'translateX(0)'},
@@ -25,11 +29,17 @@ module.exports = {
           'from':{opacity: 0},
           'to':{opacity: 1},
         },
+        rotate:{
+          'from':{transform:'rotate(0deg)'},
+          'to':{transform:'rotate(360deg)'}
+        }
       },
     },
     animation:{
       text:'text 10s linear infinite',
-      temoignage:'temoignage 2s linear '
+      temoignage:'temoignage 2s linear ',
+      rotate:'rotate 2s linear infinite ',
+
     },
 
 

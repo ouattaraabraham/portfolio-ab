@@ -5,25 +5,30 @@ import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 import projet1 from '../assets/prj1.jpg'
 import projet2 from '../assets/projet2.png'
 
-import Img1 from '../assets/img1.jpg'
-import Img2 from '../assets/img2.jpg'
-import Img3 from '../assets/img3.jpg'
-import Img4 from '../assets/img4.jpg'
-import Img5 from '../assets/img5.jpg'
-import Img6 from '../assets/img6.jpg'
+import Img1 from '../assets/img2.jpg'
+import Img2 from '../assets/landingPage2.jpg'
+import Img3 from '../assets/landingPage4.jpg'
+import Img4 from '../assets/landingPage1.jpg'
+import Img5 from '../assets/landingPage3.jpg'
+import Img6 from '../assets/landingPage5.jpg'
 
 
-const dataImg=[Img1,Img2,Img3,Img4,Img5,Img6]
+const dataImg=[Img1,Img2,Img3,Img4,Img5,]
 function SessionScrollY() {
+  const windowSize = useRef(window.innerWidth);
+
+  const media=windowSize.current<768 ?-1350 :-2200
 
     const selectRef=useRef(null)
     const triggerRef=useRef(null)
     gsap.registerPlugin(ScrollTrigger)
 
     useEffect(()=>{
+
+
         const pin = gsap.fromTo(selectRef.current,{
             translateX:0},{
-                translateX: "-200vw",                
+                translateX: `${media}px`,                
                 ease:"none",
                 duration:1,
                 scrollTrigger:{
@@ -43,11 +48,11 @@ function SessionScrollY() {
         
          <div ref={triggerRef} >
      
-            <div ref={selectRef} className='w-fit h-screen flex items-center gap-4 md:gap-10 overflow-hidden'>
+            <div ref={selectRef} className='w-[3000px] md:w-fit h-screen flex items-center gap-6 md:gap-10 overflow-hidden'>
                 
                 {
                   dataImg.map((item,id)=>
-                  <div key={id} className=' w-[282px] h-[225px]  md:w-[553px] md:h-[458px]  '>
+                  <div key={id} className=' w-[282px] h-[225px]  md:w-[560px] md:h-[454px]  '>
                     <img className='hover:scale-105 transition duration-500 cursor-pointer rounded-xl w-full h-full object-cover ' src={item} alt="projet" />
                   </div>
                   )
