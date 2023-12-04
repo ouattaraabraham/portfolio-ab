@@ -1,4 +1,5 @@
 import React , {useState} from 'react'
+import {  motion } from "framer-motion"
 import Avatar1 from '../assets/avatar1.svg'
 import Avatar2 from '../assets/avatar2.svg'
 import Avatar3 from '../assets/avatar3.svg'
@@ -43,7 +44,11 @@ function Temoignage() {
 
   return (
     <div className=' py-36 '>
-      <div className='text-center px-4 md:px-7 mx-auto flex flex-col gap-8  items-center   max-w-xl '>
+      <motion.div 
+        initial={{y:100 , opacity:0,}}
+        whileInView={{y:0 , opacity:1,whileInView:true}}
+        transition={{ duration:1}}
+       className='text-center px-4 md:px-7 mx-auto flex flex-col gap-8  items-center   max-w-xl '>
           <h2 className='pb-8 font-bold text-lg md:text-2xl'>Testimonials</h2>
 
           {/* <div ref={ref} className='animate-temoignage text-center flex flex-col pt-16 pb-6 gap-6 items-center'></div> */}
@@ -77,7 +82,7 @@ function Temoignage() {
               )
             }
           </div>
-       </div>
+       </motion.div>
     </div>
   )
 }

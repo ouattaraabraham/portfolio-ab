@@ -17,10 +17,14 @@ module.exports = {
   },
     extend: {
       backgroundImage:{
-        gradient: 'linear-gradient(83deg, rgba(255,255,255,0) 50%, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 50%)',
+        gradient: 'linear-gradient(83deg, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 51%)',
       }
       ,
       keyframes:{
+        miroir:{
+          'from':{transform:'skewY(0deg)'},
+          'to':{transform:'skewY(90deg)'}
+        },
         text:{
           'from':{transform:'translateX(0)'},
           'to':{transform:'translateX(-149%)'}
@@ -29,16 +33,23 @@ module.exports = {
           'from':{opacity: 0},
           'to':{opacity: 1},
         },
-        rotate:{
+        rotate1:{
           'from':{transform:'rotate(0deg)'},
           'to':{transform:'rotate(360deg)'}
+        },
+        rotate2:{
+          'from':{transform:'rotate(180deg)'},
+          'to':{transform:'rotate(540deg)'}
         }
       },
     },
     animation:{
+      miroir:'miroir 3s linear',
       text:'text 10s linear infinite',
       temoignage:'temoignage 2s linear ',
-      rotate:'rotate 2s linear infinite ',
+      rotate1:'rotate1 2s linear infinite',
+      rotate2:'rotate2 2s linear infinite reverse',
+
 
     },
 

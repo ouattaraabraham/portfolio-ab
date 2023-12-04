@@ -7,21 +7,27 @@ import { RiSubtractFill } from "react-icons/ri";
 function Plans() {
 const [open1,seOpen1]=useState(false) 
 const [open2,seOpen2]=useState(false) 
+const [open3,seOpen3]=useState(false) 
 
 
 const handler1=()=>{
     seOpen1((e)=>!e)
-    console.log(open1);
 }
+const show1=open1?"block":"hidden"
 
-const show2=open2?"block":"hidden"
 
 const handler2=()=>{
     seOpen2((e)=>!e)
-    console.log(open1);
 }
+const show2=open2?"block":"hidden"
 
-const show1=open1?"block":"hidden"
+const handler3=()=>{
+  seOpen3((e)=>!e)
+}
+const show3=open3?"block":"hidden"
+
+
+
   return (
     <div className='px-4 md:px-7 pb-32'>
       <div  className='flex flex-col gap-5'>
@@ -34,8 +40,9 @@ const show1=open1?"block":"hidden"
         <div className='bg-slate-100 h-[1px]'></div>
 
         <div className='px-2 flex md:justify-end '>
-          {/* show1 */}
+      
          <div className='w-full md:w-[70%]'>
+         {/* show1 */}
           <div >
             <div onClick={handler1}  className=' py-5 flex justify-between items-center text-xl sm:text-3xl  '>
               <span>Conception UX/UI</span>
@@ -46,6 +53,23 @@ const show1=open1?"block":"hidden"
               </button>
             </div>
             <div className={`${show1} md:text-xl`}>
+              <p >
+              Mon processus commence par prévoir l'élaboration d'un récit visuel pour le projet, le rendant mémorable, frappant et beau. Pour garantir un résultat réussi, j’accorde une grande importance à une compréhension approfondie du cahier des charges du projet et des besoins du client. Cela implique d'identifier les objectifs du projet, les spécifications fonctionnelles et de mener des recherches approfondies pour mieux comprendre les concurrents et les publics cibles.
+              </p>
+            </div>
+          </div>
+          <div className='bg-slate-100 h-[1px]'></div>
+          {/* show3 */}
+          <div >
+            <div onClick={handler3}  className=' py-5 flex justify-between items-center text-xl sm:text-3xl  '>
+              <span>Front end developer</span>
+              <button >
+                {
+                  open3? <RiSubtractFill/> :<FiPlus/>
+                }
+              </button>
+            </div>
+            <div className={`${show3} md:text-xl`}>
               <p >
               Mon processus commence par prévoir l'élaboration d'un récit visuel pour le projet, le rendant mémorable, frappant et beau. Pour garantir un résultat réussi, j’accorde une grande importance à une compréhension approfondie du cahier des charges du projet et des besoins du client. Cela implique d'identifier les objectifs du projet, les spécifications fonctionnelles et de mener des recherches approfondies pour mieux comprendre les concurrents et les publics cibles.
               </p>
