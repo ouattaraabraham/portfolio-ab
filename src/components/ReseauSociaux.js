@@ -9,16 +9,16 @@ function ReseauSociaux() {
 
 
   const dataReseaux=[
-    {id:0,reseau:"Twitter",link:"",icon:<FaTwitter size={23}/>},
-    {id:1,reseau:"Instagram",link:"https://www.instagram.com/abrahamcodeur/",icon:<AiFillInstagram size={23}/>},
-    {id:0,reseau:"LinkedinIn",link:"https://www.linkedin.com/in/abraham-ouattara-8ba4a522b/",icon:<FaLinkedinIn size={23}/>},
-    {id:0,reseau:"Github",link:"https://github.com/ouattaraabraham",icon:<FaSquareGithub size={23}/>},
+    {id:0,reseau:"Twitter",link:"",icon:<FaTwitter className='group-hover:text-black' size={23}/>},
+    {id:1,reseau:"Instagram",link:"https://www.instagram.com/abrahamcodeur/",icon:<AiFillInstagram className='group-hover:text-black' size={23}/>},
+    {id:0,reseau:"LinkedinIn",link:"https://www.linkedin.com/in/abraham-ouattara-8ba4a522b/",icon:<FaLinkedinIn className='group-hover:text-black' size={23}/>},
+    {id:0,reseau:"Github",link:"https://github.com/ouattaraabraham",icon:<FaSquareGithub className='group-hover:text-black' size={23}/>},
 ]
   return (
     <div className='text-[1.1vw] w-full flex justify-center gap-4'>
         {
                 dataReseaux.map(({link,id,icon})=>
-                <a className="p-2 rounded-full border-2" key={id} href={link} target='blanc'>
+                <a className="p-2 rounded-full border-2 group hover:bg-slate-100" key={id} href={link} target='blanc'>
                   {icon}
                 </a>
                 )

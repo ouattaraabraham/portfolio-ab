@@ -9,7 +9,7 @@ function About() {
           <div className=' md:hidden text-center'>
               <h1 className='tracking-[.07em] text-[2.5rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold'>About</h1>
           </div>
-              <p className='text-[1.5rem] sm:text-[1.7rem] sm:leading-[2.5rem] lg:text-[2.2rem] lg:leading-[3rem] '>
+              <p className='text-[1.5rem] sm:text-[1.7rem] sm:leading-[2.5rem] lg:text-[2.1rem] lg:leading-[3rem] '>
               Bienvenue dans mon monde de développeur front-end professionnel . Je m'appelle Abraham Ouattara et je suis un développeur expérimenté spécialisé dans la création de solutions frontend de haute qualité, efficaces et visuellement attrayantes. Grâce à mon expertise, j'aide les entreprises et les organisations à atteindre leurs objectifs en ligne et à se démarquer dans le paysage numérique concurrentiel.
               </p>
               {/* <br />

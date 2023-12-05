@@ -16,6 +16,10 @@ module.exports = {
     
   },
     extend: {
+
+      boxShadow: {
+        btn: '-5px -5px white',
+      },
       backgroundImage:{
         gradient: 'linear-gradient(83deg, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 51%)',
       }
@@ -40,7 +44,11 @@ module.exports = {
         rotate2:{
           'from':{transform:'rotate(180deg)'},
           'to':{transform:'rotate(540deg)'}
-        }
+        },
+        rotate3:{
+          'from':{transform:'rotate(0deg)'},
+          'to':{transform:'rotate(360deg)'}
+        },
       },
     },
     animation:{
@@ -49,6 +57,8 @@ module.exports = {
       temoignage:'temoignage 2s linear ',
       rotate1:'rotate1 2s linear infinite',
       rotate2:'rotate2 2s linear infinite reverse',
+      rotate3:'rotate3 2s linear infinite ',
+
 
 
     },

@@ -52,27 +52,27 @@ function Home() {
                   <motion.div
                   initial={{skewY:'0deg'}}
                   animate={{skewY:'90deg',}}
-                  transition={{ duration:1.9 ,delay:0.6}}
+                  transition={{ duration:1.8 ,delay:0.5}}
                    className='bg-slate-200 skew-y-[100deg] w-full h-full'>.</motion.div>
                   <motion.div
                   initial={{skewY:'0deg'}}
                   animate={{skewY:'90deg',}}
-                  transition={{ duration:1.9,delay:0.6}}
+                  transition={{ duration:1.8,delay:0.5}}
                    className='bg-slate-200 skew-y-[100deg]'>.</motion.div>
                   <motion.div
                   initial={{skewY:'0deg'}}
                   animate={{skewY:'90deg',}}
-                  transition={{ duration:1.9,delay:0.6}}
+                  transition={{ duration:1.8,delay:0.5}}
                    className='bg-slate-200 skew-y-[100deg]'>.</motion.div>
                   <motion.div
                   initial={{skewY:'0deg'}}
                   animate={{skewY:'90deg',}}
-                  transition={{ duration:1.9,delay:0.6}}
+                  transition={{ duration:1.8,delay:0.5}}
                    className='bg-slate-200 skew-y-[100deg]'>.</motion.div>
                   <motion.div
                   initial={{skewY:'0deg'}}
                   animate={{skewY:'90deg',}}
-                  transition={{ duration:1.9,delay:0.6}}
+                  transition={{ duration:1.8,delay:0.5}}
                    className='bg-slate-200 skew-y-[100deg]'>.</motion.div>
                 
                 </div>

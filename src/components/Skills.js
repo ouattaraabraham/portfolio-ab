@@ -47,8 +47,8 @@ const icons=[
      viewport={{once:true}}
      custom={50}
       className=' flex flex-col gap-5 md:flex-row md:gap-0 '>
-       <div className='flex flex-col justify-around gap-10 w-full border-2 py-8  mx-auto sm:py-10 md:w-[50%] lg:py-14 lg:gap-14 2xl:max-w-4xl'>
-        <div className='flex gap-5 mx-auto pl-4 text-xl sm:text-2xl   xl:text-3xl '>
+       <div className='flex flex-col justify-around gap-[1.5rem] w-full border-2 py-8  mx-auto mobile:py-[1.2rem]  md:w-[50%] md:gap-[2rem] lg:py-[3rem] lg:gap-14 2xl:max-w-4xl'>
+        <div className='flex gap-5 mx-auto pl-4 text-xl sm:text-[1.6rem] lg:text-[1.7rem]  xl:text-[1.9rem] '>
            <span><HiOutlineDesktopComputer size={43} color='#eeeded'/></span>
            <span className='text-slate-100	'>frontend developpeur</span>
         </div>
