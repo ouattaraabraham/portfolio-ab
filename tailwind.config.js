@@ -27,7 +27,7 @@ module.exports = {
         },
         text:{
           'from':{transform:'translateX(0)'},
-          'to':{transform:'translateX(-149%)'}
+          'to':{transform:'translateX(-400%)'}
         },
         temoignage:{
           'from':{opacity: 0},
@@ -45,7 +45,7 @@ module.exports = {
     },
     animation:{
       miroir:'miroir 3s linear',
-      text:'text 10s linear infinite',
+      text:'text 30s linear infinite',
       temoignage:'temoignage 2s linear ',
       rotate1:'rotate1 2s linear infinite',
       rotate2:'rotate2 2s linear infinite reverse',

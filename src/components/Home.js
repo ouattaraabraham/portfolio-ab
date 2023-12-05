@@ -7,8 +7,8 @@ function Home() {
 
   const txt1='UltraStyle'
   return (
-    <div name='Home' className="px-4 md:px-10 w-full ">
-        <div className='py-[8rem] flex flex-col gap-[5vw] lg:gap-0 lg:grid lg:grid-cols-3  '>       
+    <div name='Home' className="px-4 md:px-10 w-full h-screen flex">
+        <div className='m-auto flex flex-col gap-[5vw] lg:gap-0 lg:grid lg:grid-cols-3  '>       
             <div className='flex flex-col gap-[2vw] mobile:gap-[3vw] lg:col-span-2   '>
                 <div className='tracking-wide font-montrealI font-semibold	 text-[7.5vw] mobile:text-[7vw] sm:text-[7vw]  md:text-[5vw] lg:text-[5vw]  mx-auto'>
                     <motion.h2 
@@ -45,34 +45,34 @@ function Home() {
             <motion.div
               initial={{y:50 , opacity:0,}}
               animate={{y:0 , opacity:1,}}
-              transition={{delay:1, duration:0.9}}
+              transition={{delay:1, duration:0.7}}
                className=''>
-              <div className='relative lg:bottom-[2rem] rotate-[6deg] border-2 w-[10em] h-[13em] lg:w-[17vw] lg:h-[28vw] mx-auto overflow-hidden'>
+              <div className='relative lg:bottom-[1.5rem] rotate-[6deg] border-2 w-[10em] h-[13em] lg:w-[17vw] lg:h-[28vw] mx-auto overflow-hidden'>
                 <div  className='absolute top-[-200px] w-full h-screen grid grid-cols-5	gap-1'>
                   <motion.div
                   initial={{skewY:'0deg'}}
                   animate={{skewY:'90deg',}}
-                  transition={{ duration:2 ,delay:0.6}}
+                  transition={{ duration:1.9 ,delay:0.6}}
                    className='bg-slate-200 skew-y-[100deg] w-full h-full'>.</motion.div>
                   <motion.div
                   initial={{skewY:'0deg'}}
                   animate={{skewY:'90deg',}}
-                  transition={{ duration:2,delay:0.6}}
+                  transition={{ duration:1.9,delay:0.6}}
                    className='bg-slate-200 skew-y-[100deg]'>.</motion.div>
                   <motion.div
                   initial={{skewY:'0deg'}}
                   animate={{skewY:'90deg',}}
-                  transition={{ duration:2,delay:0.6}}
+                  transition={{ duration:1.9,delay:0.6}}
                    className='bg-slate-200 skew-y-[100deg]'>.</motion.div>
                   <motion.div
                   initial={{skewY:'0deg'}}
                   animate={{skewY:'90deg',}}
-                  transition={{ duration:2,delay:0.6}}
+                  transition={{ duration:1.9,delay:0.6}}
                    className='bg-slate-200 skew-y-[100deg]'>.</motion.div>
                   <motion.div
                   initial={{skewY:'0deg'}}
                   animate={{skewY:'90deg',}}
-                  transition={{ duration:2,delay:0.7}}
+                  transition={{ duration:1.9,delay:0.6}}
                    className='bg-slate-200 skew-y-[100deg]'>.</motion.div>
                 
                 </div>

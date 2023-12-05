@@ -16,23 +16,19 @@ function App() {
     <div className="bg-gradient-session font-enraSlabVariable	">
       <NavBar/>
       <Home/>
-      {/* body */}
-      <div className="relative ">
-        <div className="bg-neutral-950 text-white">
-          <About/>
-          <Skills/>
-          <SessionConception/>
-          <SessionScrollY/>
-          <Projets/>
-          <Temoignage/>
-          <Plans/>
-          <MeContacter/>
-          <Footer/>
-        </div>
+      <div className="bg-neutral-950 text-white">
+        <About/>
+        <Skills/>
+        <SessionConception/>
+        <SessionScrollY/>
+        <Projets/>
+        <Temoignage/>
+        <Plans/>
+        <MeContacter/>
+        <Footer/>
       </div>
-      
-    </div>
-  );
+      </div>
+        );
 }
 
 export default App;

@@ -25,13 +25,14 @@ function ConceptionUxUi() {
             initial="initial"
             transition={{duration:1}}
             whileInView="animate"
-            custom={100}
+            viewport={{once:true}}
+            custom={50}
            className='pb-2 md:leading-relaxed flex flex-col gap-2 items-center text-[7vw] sm:text-[5vw] xl:text-[4vw]'>
           <div className=' md:w-full 2xl:text-[69.4px]'>
             <span className='md:block md:pl-4 '>  UI Design  </span>
             <span className='md:block '>UX Design</span>
           </div>
-            <span className='md:pl-4 md:w-full '> Development</span>
+            <span className='md:pl-4 md:w-full '> Front end dev</span>
           </motion.div>
           <div className='flex justify-center overflow-hidden'>
             <div

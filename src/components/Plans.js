@@ -2,6 +2,9 @@ import React ,{useState} from 'react'
 import { CgCornerRightDown } from "react-icons/cg";
 import { FiPlus } from "react-icons/fi";
 import { RiSubtractFill } from "react-icons/ri";
+import { FaCode } from "react-icons/fa6";
+
+
 
 
 function Plans() {
@@ -54,7 +57,7 @@ const show3=open3?"block":"hidden"
             </div>
             <div className={`${show1} md:text-xl`}>
               <p >
-              Mon processus commence par prévoir l'élaboration d'un récit visuel pour le projet, le rendant mémorable, frappant et beau. Pour garantir un résultat réussi, j’accorde une grande importance à une compréhension approfondie du cahier des charges du projet et des besoins du client. Cela implique d'identifier les objectifs du projet, les spécifications fonctionnelles et de mener des recherches approfondies pour mieux comprendre les concurrents et les publics cibles.
+             Pour concevoir je me tourne vers des outils tel que Figma qui me permet de prévoir l'élaboration d'un récit visuel pour le projet ,  ce qui me permet egalement de fait voit a mes clients le projet finale afin de faire les ajoustemant avant la realisation finale du projet  .
               </p>
             </div>
           </div>
@@ -62,7 +65,11 @@ const show3=open3?"block":"hidden"
           {/* show3 */}
           <div >
             <div onClick={handler3}  className=' py-5 flex justify-between items-center text-xl sm:text-3xl  '>
-              <span>Front end developer</span>
+            <div className='flex items-center gap-5'>
+             <span>Development</span>
+             <span><FaCode/></span>
+
+            </div>
               <button >
                 {
                   open3? <RiSubtractFill/> :<FiPlus/>
@@ -71,8 +78,7 @@ const show3=open3?"block":"hidden"
             </div>
             <div className={`${show3} md:text-xl`}>
               <p >
-              Mon processus commence par prévoir l'élaboration d'un récit visuel pour le projet, le rendant mémorable, frappant et beau. Pour garantir un résultat réussi, j’accorde une grande importance à une compréhension approfondie du cahier des charges du projet et des besoins du client. Cela implique d'identifier les objectifs du projet, les spécifications fonctionnelles et de mener des recherches approfondies pour mieux comprendre les concurrents et les publics cibles.
-              </p>
+              En tant que développeur front-end , ma principale responsabilité est de développer le côté client d'un site Web. Cela implique la création et la mise en œuvre des éléments visuels avec lesquels les utilisateurs interagissent, tels que les boutons, les menus et les formulaires, à l'aide de HTML , CSS , JavaScript et des framwork tel que React , et diverse librairie utile pour le projet  .              </p>
             </div>
           </div>
           <div className='bg-slate-100 h-[1px]'></div>
@@ -88,7 +94,7 @@ const show3=open3?"block":"hidden"
             </div>
             <div className={`${show2} md:text-xl`}>
               <p>
-              Le développement Webflow est au cœur de ce que je propose, en mettant l'accent sur une conception personnalisée adaptée à vos besoins spécifiques, différenciant ainsi votre entreprise de la concurrence. L'objectif principal est de fournir un site Web réactif, performant, au pixel près et offrant une expérience utilisateur fluide avec des animations et des interactions soigneusement conçues. De l'espacement, de la composition et de la typographie au mouvement, à l'interaction et à la fonctionnalité, j'aligne méticuleusement chaque élément pour créer un site Web transparent, réactif et visuellement époustouflant.             lllllllllllllllllllllldddddddddddddddddddddhhhhhhhh
+              Tout d'aborde je me focalise sur les attentes véritable de mes clients afin d'eviter toute confusion j'établie un cahier de charge et nous voyons ensemble ce qui est le mieux adapter pour la concrétisation du projet . 
               </p>
             </div>
           </div>

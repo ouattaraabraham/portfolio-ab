@@ -2,19 +2,15 @@ import React from 'react'
 
 function About() {
   return (
-   <div  id='About' className='px-4 md:px-7 pt-28 pb-12 flex justify-end '> 
+   <div  id='About' className='px-4 md:px-7 pt-20 md:pt-28 pb-12 flex justify-end '> 
     <div className='mx-auto'>
       <div className='flex justify-end max-w-screen-xl '>
         <div className=' flex flex-col gap-5 md:max-w-[80%] lg:max-w-[69%] 	 '>
           <div className=' md:hidden text-center'>
               <h1 className='tracking-[.07em] text-[2.5rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold'>About</h1>
           </div>
-              <p className='text-lg sm:text-2xl lg:text-3xl'>
-
-              Hi I’m Josh, an experienced Digital Designer crafting beautiful interactive experiences. My 10 year career has seen me work for a variety of London-based agencies who specialise in digital marketing, advertising and ecommerce, which has given me a holistic knowledge of what brands need to succeed in the digital world.            
-            <br/>
-            <br/>
-            Hi I’m Josh, an experienced Digital Designer  Hi I’m Josh, an experienced Digital Designer  Hi I’m Josh, an experienced Digital Designer
+              <p className='text-[1.5rem] sm:text-[1.7rem] sm:leading-[2.5rem] lg:text-[2.2rem] lg:leading-[3rem] '>
+              Bienvenue dans mon monde de développeur front-end professionnel . Je m'appelle Abraham Ouattara et je suis un développeur expérimenté spécialisé dans la création de solutions frontend de haute qualité, efficaces et visuellement attrayantes. Grâce à mon expertise, j'aide les entreprises et les organisations à atteindre leurs objectifs en ligne et à se démarquer dans le paysage numérique concurrentiel.
               </p>
               {/* <br />
               <p className='text-lg sm:text-2xl lg:text-3xl '>

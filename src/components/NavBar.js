@@ -1,6 +1,7 @@
 import React ,{ useState } from 'react'
 import { Link } from 'react-scroll';
 import Profil from'../assets/avatar1.svg'
+import { motion } from "framer-motion"
 import { Bs1Circle } from "react-icons/bs";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
@@ -33,7 +34,11 @@ function NavBar() {
         {id:3,link:'Contact'},
     ]
   return (
-    <div className='z-10 flex fixed top-0 py-2 px-4 sm:px-8 md:px-10  w-full  justify-between items-center text-slate-100'>
+    <motion.div
+      initial={{y:-50 , opacity:0}}
+      animate={{ y: 0 , opacity:1 }}
+      transition={{delay: 0 , duration:0.5}}
+     className='z-10 flex fixed top-0 py-2 px-4 sm:px-8 md:px-10  w-full  justify-between items-center text-slate-100'>
         <div  className='cursor-pointer flex  items-center z-10'>
          <Link  className='hidden md:block' to='Home' smooth duration={500}>
            <img className='w-8 h8 my-2 mr-2' src={Profil} alt="Profil" />
@@ -93,7 +98,7 @@ function NavBar() {
      
         </div>   
             }
-    </div>
+    </motion.div>
   )
 }
 
