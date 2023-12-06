@@ -2,8 +2,8 @@ import React, {useEffect, useRef } from 'react'
 import {gsap} from 'gsap'
 import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 
-import projet1 from '../assets/prj1.jpg'
-import projet2 from '../assets/projet2.png'
+// import projet1 from '../assets/prj1.jpg'
+// import projet2 from '../assets/projet2.png'
 
 import Img1 from '../assets/img2.jpg'
 import Img2 from '../assets/landingPage2.jpg'
