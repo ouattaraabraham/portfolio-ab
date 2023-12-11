@@ -38,7 +38,7 @@ function ConceptionUxUi() {
             <div
             
              className=' flex justify-center items-center border-2	 overflow-hidden rounded-[600px] w-[90vw] h-[50vw] md:w-[55vw] md:h-[30vw] max-h-[460px]	'>
-               <video autoPlay loop muted className=''>
+               <video autoPlay loop muted className='overflow-hidden'>
                 <source src={Video} type='video/mp4' />
                </video>
             </div> 

@@ -49,21 +49,21 @@ function Temoignage() {
         whileInView={{y:0 , opacity:1,}}
         viewport={{once:true}}
         transition={{ duration:1}}
-       className='text-center px-4 md:px-7 mx-auto flex flex-col gap-8  items-center   max-w-xl '>
-          <h2 className='pb-8 font-bold text-lg md:text-2xl'>Testimonials</h2>
+       className='text-center px-4 md:px-7 mx-auto flex flex-col items-center   max-w-xl '>
+          <h2 className='pb-10 font-bold text-lg md:text-2xl'>Testimonials</h2>
 
           {/* <div ref={ref} className='animate-temoignage text-center flex flex-col pt-16 pb-6 gap-6 items-center'></div> */}
 
-          <div className='flex flex-col items-center gap-2'>
+          <div className='flex flex-col items-center pb-6'>
              <img className='w-16' src={temoinCurent[0].avatar} alt="profil" />
-              <h3 className=' font-semibold	'>
+              <h3 className=' font-semibold	py-2'>
               {temoinCurent[0].name}
               </h3>
               <p >
               {temoinCurent[0].activite}
               </p>          
             </div>
-            <p className='md:text-xl '>
+            <p className='md:text-xl pb-8'>
               {temoinCurent[0].temoignage}
             </p>
       

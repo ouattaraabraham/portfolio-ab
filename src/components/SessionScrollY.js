@@ -48,11 +48,11 @@ function SessionScrollY() {
         
          <div ref={triggerRef} >
      
-            <div ref={selectRef} className='w-[3000px] md:w-fit h-screen flex items-center gap-6 md:gap-10 overflow-hidden'>
+            <div ref={selectRef} className='w-[3000px] md:w-fit h-screen flex items-center overflow-hidden'>
                 
                 {
                   dataImg.map((item,id)=>
-                  <div key={id} className=' w-[282px] h-[225px]  md:w-[560px] md:h-[454px]  '>
+                  <div key={id} className=' w-[282px] h-[225px]  md:w-[560px] md:h-[454px]  pr-6 md:pr-10'>
                     <img className='hover:scale-105 transition duration-500 cursor-pointer rounded-xl w-full h-full object-cover ' src={item} alt="projet" />
                   </div>
                   )

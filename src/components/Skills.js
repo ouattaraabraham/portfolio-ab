@@ -46,11 +46,11 @@ const icons=[
      whileInView="animate"
      viewport={{once:true}}
      custom={50}
-      className=' flex flex-col gap-5 md:flex-row md:gap-0 '>
-       <div className='flex flex-col justify-around gap-[1.5rem] w-full border-2 py-8  mx-auto mobile:py-[1.2rem]  md:w-[50%] md:gap-[2rem] lg:py-[3rem] lg:gap-14 2xl:max-w-4xl'>
-        <div className='flex gap-5 mx-auto pl-4 text-xl sm:text-[1.6rem] lg:text-[1.7rem]  xl:text-[1.9rem] '>
+      className=' flex flex-col  md:flex-row md:gap-0  '>
+       <div className='flex flex-col justify-around gap-[1.5rem] w-full border-2 py-8  mx-auto mb-[1.5rem] md:mb-0 mobile:py-[1.2rem]  md:w-[50%] md:gap-[2rem] lg:py-[3rem] lg:gap-14 2xl:max-w-4xl'>
+        <div className='flex  mx-auto pl-4 text-xl sm:text-[1.6rem] lg:text-[1.7rem]  xl:text-[1.9rem] '>
            <span><HiOutlineDesktopComputer size={43} color='#eeeded'/></span>
-           <span className='text-slate-100	'>frontend developpeur</span>
+           <span className='text-slate-100	ml-5'>frontend developpeur</span>
         </div>
         <div className='grid grid-cols-3 gap-8 sm:text-xl lg:text-2xl '>
           {icons.map(({id,name,icon})=>(
