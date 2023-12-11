@@ -18,7 +18,7 @@ function ReseauSociaux() {
     <div className='text-[1.1vw] w-full flex justify-center '>
         {
                 dataReseaux.map(({link,id,icon})=>
-                <a className="p-2 mr-5 rounded-full border-[2px] group hover:bg-slate-100" key={id} href={link} target='blanc'>
+                <a className="p-2 mr-5 rounded-full border-2 group hover:bg-slate-100" key={id} href={link} target='blanc'>
                   {icon}
                 </a>
                 )
