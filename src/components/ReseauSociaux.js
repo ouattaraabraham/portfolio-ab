@@ -15,10 +15,10 @@ function ReseauSociaux() {
     {id:0,reseau:"Github",link:"https://github.com/ouattaraabraham",icon:<FaSquareGithub className='group-hover:text-black' size={23}/>},
 ]
   return (
-    <div className='text-[1.1vw] w-full flex justify-center bg-[#663399]'>
+    <div name='reseaux sociaux'  className='text-[1.1vw] w-full flex justify-center flex-wrap'>
         {
                 dataReseaux.map(({link,id,icon})=>
-                <a className="p-2 mr-5 rounded-full border-[2px] group hover:bg-slate-100" key={id} href={link} target='blanc'>
+                <a className="p-2 m-2 lg:m-3 rounded-full border-[2px] group hover:bg-slate-100" key={id} href={link} target='blanc'>
                   {icon}
                 </a>
                 )

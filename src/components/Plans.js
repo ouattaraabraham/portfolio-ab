@@ -33,8 +33,8 @@ const show3=open3?"block":"hidden"
 
   return (
     <div className='px-4 md:px-7 pb-32'>
-      <div  className='flex flex-col gap-5'>
-        <div className='flex items-center gap-2'>
+      <div  className='flex flex-col'>
+        <div className='flex items-center gap-2 mb-5'>
           <h2 className='tracking-[.07em] text-[2.5rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold'>Pestation</h2>
           <span className='pt-2'>
           <CgCornerRightDown size={35}/>
@@ -55,7 +55,7 @@ const show3=open3?"block":"hidden"
                 }
               </button>
             </div>
-            <div className={`${show1} md:text-xl`}>
+            <div className={`${show1} md:text-xl pb-2`}>
               <p >
              Pour concevoir je me tourne vers des outils tel que Figma qui me permet de prévoir l'élaboration d'un récit visuel pour le projet ,  ce qui me permet egalement de fait voit a mes clients le projet finale afin de faire les ajoustemant avant la realisation finale du projet  .
               </p>
@@ -65,8 +65,8 @@ const show3=open3?"block":"hidden"
           {/* show3 */}
           <div >
             <div onClick={handler3}  className=' py-5 flex justify-between items-center text-xl sm:text-3xl  '>
-            <div className='flex items-center gap-5'>
-             <span>Development</span>
+            <div className='flex items-center'>
+             <span className='mr-5'>Development</span>
              <span><FaCode/></span>
 
             </div>
@@ -76,7 +76,7 @@ const show3=open3?"block":"hidden"
                 }
               </button>
             </div>
-            <div className={`${show3} md:text-xl`}>
+            <div className={`${show3} md:text-xl pb-2`}>
               <p >
               En tant que développeur front-end , ma principale responsabilité est de développer le côté client d'un site Web. Cela implique la création et la mise en œuvre des éléments visuels avec lesquels les utilisateurs interagissent, tels que les boutons, les menus et les formulaires, à l'aide de HTML , CSS , JavaScript et des framwork tel que React , et diverse librairie utile pour le projet  .              </p>
             </div>
@@ -92,7 +92,7 @@ const show3=open3?"block":"hidden"
                 }
               </button>
             </div>
-            <div className={`${show2} md:text-xl`}>
+            <div className={`${show2} md:text-xl pb-2`}>
               <p>
               Tout d'aborde je me focalise sur les attentes véritable de mes clients afin d'eviter toute confusion j'établie un cahier de charge et nous voyons ensemble ce qui est le mieux adapter pour la concrétisation du projet . 
               </p>

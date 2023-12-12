@@ -1,7 +1,7 @@
 import React ,{ useState } from 'react'
 import { Link } from 'react-scroll';
 import Profil from'../assets/avatar1.svg'
-import { motion } from "framer-motion"
+import { motion , AnimatePresence } from "framer-motion"
 import { Bs1Circle } from "react-icons/bs";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
@@ -11,10 +11,10 @@ import { FaLinkedinIn } from "react-icons/fa";
 
 
 const dataReseaux=[
-    {id:0,reseau:"Twitter",link:"",icon:<FaTwitter size={23}/>},
-    {id:1,reseau:"Instagram",link:"https://www.instagram.com/abrahamcodeur/",icon:<AiFillInstagram size={23}/>},
-    {id:0,reseau:"LinkedinIn",link:"https://www.linkedin.com/in/abraham-ouattara-8ba4a522b/",icon:<FaLinkedinIn size={23}/>},
-    {id:0,reseau:"Github",link:"https://github.com/ouattaraabraham",icon:<FaSquareGithub size={23}/>},
+    {id:0,delay:.4,reseau:"Twitter",link:"",icon:<FaTwitter size={23}/>},
+    {id:1,delay:.6,reseau:"Instagram",link:"https://www.instagram.com/abrahamcodeur/",icon:<AiFillInstagram size={23}/>},
+    {id:0,delay:.8,reseau:"LinkedinIn",link:"https://www.linkedin.com/in/abraham-ouattara-8ba4a522b/",icon:<FaLinkedinIn size={23}/>},
+    {id:0,delay:1,reseau:"Github",link:"https://github.com/ouattaraabraham",icon:<FaSquareGithub size={23}/>},
 ]
 function NavBar() {
     const [open,setOpen]=useState(false)
@@ -63,9 +63,15 @@ function NavBar() {
          {open?<RxCross2 size={30} color='#000000'/> :<HiOutlineBars3CenterLeft size={30} color='#f2f2f2'/>}
          </button>
          
+      <AnimatePresence>
+
         {open && 
-  
-        <div className='md:hidden  absolute flex flex-col gap-10 top-0 right-0 h-screen  w-full justify-center items-center bg-slate-200 text-black py-10 '>
+        <motion.div
+        initial={{y:-800 }}
+        animate={{y:0}}
+        transition={{delay: 0 , duration:1}}
+        exit={{y:-800}}
+         className='md:hidden  absolute flex flex-col gap-10 top-0 right-0 h-screen  w-full justify-center items-center bg-slate-200 text-black py-10 '>
 
             <ul className='text-center w-full'>
                  <div className='w-full h-[1px] bg-black'></div>
@@ -83,21 +89,29 @@ function NavBar() {
                  <div className='w-full h-[1px] bg-black'></div>
             </ul>
 
-            <div className='flex flex-col gap-8'>
+            <div className='relative flex flex-col gap-8'>
               <h3>ouattara.abraham@gmail.com</h3>
                 <div className='w-full flex justify-center gap-4'>
                 {
-                dataReseaux.map(({link,id,icon})=>
-                <a className="p-2 bg-[#d3cabd] rounded-full border-2" key={id} href={link} target='blanc'>
+                dataReseaux.map(({link,id,icon,delay})=>
+                <motion.a
+                initial={{y:-30 , opacity:0}}
+                animate={{y:0 , opacity:1}}
+                transition={{delay:delay , duration:.5}}
+
+                 className="p-2 bg-[#d3cabd] rounded-full border-2" key={id} href={link} target='blanc'>
                   {icon}
-                </a>
+                </motion.a>
                 )
                 }
                 </div>
+                
             </div>
-     
-        </div>   
+            
+        </motion.div>   
             }
+      </AnimatePresence>
+
     </motion.div>
   )
 }
