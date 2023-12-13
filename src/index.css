@@ -24,9 +24,12 @@
 }
 
 .bg-gradient-session{background-image:  linear-gradient(90deg, rgba(229,229,232,1) 29%, rgba(195,211,218,1) 55%, rgba(143,147,148,1) 76%);}
-.bg-gradient-btn{background: linear-gradient(90deg, rgba(2,60,145,1) 29%, rgba(25,59,179,1) 55%, rgba(27,91,223,1) 76%);
+.bg-gradient-btn{background: linear-gradient(90deg, rgba(2,60,145,1) 29%, rgba(25,59,179,1) 55%, rgba(27,91,223,1) 76%);}
+.bg-gradient-home{background: linear-gradient(90deg, rgba(195,195,189,1) 0%, rgba(199,214,220,1) 55%, rgba(143,147,148,1) 100%);
 }
+
 .bg-image-tailwindcss { background-image: url('https://avatars0.githubusercontent.com/u/30317862'); }
+
 
 .bg-clip-border { background-clip: border-box; }
 .bg-clip-padding { background-clip: padding-box; }

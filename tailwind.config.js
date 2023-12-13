@@ -22,6 +22,7 @@ module.exports = {
       },
       backgroundImage:{
         gradient: 'linear-gradient(83deg, rgba(255,255,255,0) 50%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 51%)',
+        gradient1:' linear-gradient(83deg, rgba(213,213,225,1) 0%, rgba(201,204,215,1) 50%, rgba(185,182,206,1) 100%)'     
       }
       ,
       keyframes:{

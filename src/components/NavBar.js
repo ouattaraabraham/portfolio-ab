@@ -71,7 +71,7 @@ function NavBar() {
         animate={{y:0}}
         transition={{delay: 0 , duration:1}}
         exit={{y:-800}}
-         className='md:hidden  absolute flex flex-col gap-10 top-0 right-0 h-screen  w-full justify-center items-center bg-slate-200 text-black py-10 '>
+         className='md:hidden  absolute flex flex-col gap-10 top-0 right-0 h-screen  w-full justify-center items-center bg-gradient-home text-black py-10 '>
 
             <ul className='text-center w-full'>
                  <div className='w-full h-[1px] bg-black'></div>
@@ -99,7 +99,7 @@ function NavBar() {
                 animate={{y:0 , opacity:1}}
                 transition={{delay:delay , duration:.5}}
 
-                 className="p-2 bg-[#d3cabd] rounded-full border-2" key={id} href={link} target='blanc'>
+                 className="p-2 bg-[#9c9c9cd4] rounded-full " key={id} href={link} target='blanc'>
                   {icon}
                 </motion.a>
                 )

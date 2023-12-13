@@ -1,6 +1,5 @@
 import React from 'react'
 import ReseauSociaux from './ReseauSociaux'
-
 function Footer() {
   return (
     <div className='py-20 px-4 md:px-7 '>

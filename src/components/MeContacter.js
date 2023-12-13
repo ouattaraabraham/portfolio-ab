@@ -15,7 +15,7 @@ function MeContacter() {
     // transition={{duration: 1.5,}}
     //  whileInView={{borderColor:colors}}
      className='py-8 mx-auto text-center text-slate-10  items-center sm:py-10  sm:max-w-2xl'>
-      <h2>Interested in collaborating with me?</h2>
+      <h2 className='text-lg'>collaborating with me?</h2>
       <p className='lg:text-lg py-5'>
        I’m always open to discussing product design work or partnership opportunities.    
       </p>

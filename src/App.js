@@ -13,7 +13,7 @@ import Plans from "./components/Plans";
 
 function App() {
   return (
-    <div className="bg-gradient-session font-enraSlabVariable	">
+    <div className="bg-gradient-home font-enraSlabVariable	">
       <NavBar/>
       <Home/>
       <div className="bg-neutral-950 text-white">
