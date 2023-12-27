@@ -26,7 +26,7 @@ function Temoignage() {
     {
       id:1,
       avatar: Avatar2,
-      temoignage:"Abraham Ouattara a une communication facile et sa flexibilité permet de surmonter tout les obstacles c'est etonnant , pas de doute que c'est un genie",
+      temoignage:"Abraham Ouattara a une communication facile et sa flexibilité est marquable c'est etonnant , pas de doute que c'est un genie",
       name:"Alvin Engler",
       activite:"( CEO, West Third Enterprises, Inc. )",
     },
@@ -75,7 +75,7 @@ function Temoignage() {
                 console.log('btnTrue :'+btnTrue)
               return (
                 <button  onClick={(e)=>{handlerChange(item.id)}} key={item.id}>
-                <TbPointFilled  color={btnTrue?'#082fb2' :''} size={35} />
+                <TbPointFilled  color={!btnTrue?'#656d7c' :''} size={35} />
               </button>
              
               )

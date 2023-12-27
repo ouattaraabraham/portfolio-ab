@@ -28,7 +28,7 @@
 .bg-gradient-home{background: linear-gradient(90deg, rgba(195,195,189,1) 0%, rgba(199,214,220,1) 55%, rgba(143,147,148,1) 100%);
 }
 
-.bg-image-tailwindcss { background-image: url('https://avatars0.githubusercontent.com/u/30317862'); }
+/* .bg-image-tailwindcss { background-image: url('https://avatars0.githubusercontent.com/u/30317862'); }
 
 
 .bg-clip-border { background-clip: border-box; }
@@ -38,4 +38,4 @@
 
 .bg-origin-border { background-origin: border-box; }
 .bg-origin-padding { background-origin: padding-box; }
-.bg-origin-content { background-origin: content-box; }
+.bg-origin-content { background-origin: content-box; } */

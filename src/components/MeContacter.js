@@ -20,7 +20,7 @@ function MeContacter() {
        I’m always open to discussing product design work or partnership opportunities.    
       </p>
       <motion.button
-       className='border-2 px-4 py-2 bg-white text-black hover:shadow-bt hover:scale-[1.09]	 '>Start a conversation</motion.button>
+       className='border px-4 py-2 shadow-[2px_2px] hover:shadow-[4px_4px]  hover:shadow-bt '>Start a conversation</motion.button>
     </div>
   </motion.div>
   )

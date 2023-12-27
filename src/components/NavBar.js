@@ -1,6 +1,7 @@
 import React ,{ useState } from 'react'
 import { Link } from 'react-scroll';
 import Profil from'../assets/avatar1.svg'
+import star from '../assets/Star 1.svg'
 import { motion , AnimatePresence } from "framer-motion"
 import { Bs1Circle } from "react-icons/bs";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
@@ -38,19 +39,18 @@ function NavBar() {
       initial={{y:-50 , opacity:0}}
       animate={{ y: 0 , opacity:1 }}
       transition={{delay: 0 , duration:0.5}}
-     className='z-10 flex fixed top-0 py-2 px-4 sm:px-8 md:px-10  w-full  justify-between items-center text-slate-100'>
+     className='z-10 flex fixed top-0 py-2 px-4 sm:px-8 md:px-[3rem] md:py-[0.7rem]  w-full  justify-between items-center text-slate-100'>
         <div  className='cursor-pointer flex  items-center z-10'>
          <Link  className='hidden md:block' to='Home' smooth duration={500}>
-           <img className='w-8 h8 my-2 mr-2' src={Profil} alt="Profil" />
+           <img className='w-[4rem] ' src={star} alt="Profil" />
          </Link>
 
          <Link onClick={fcSetDown}  className=' md:hidden' to='Home' smooth duration={500}>
-           <img className='w-8 h8 my-2 mr-2' src={Profil} alt="Profil" />
+           <img className='w-[3rem]' src={star} alt="Profil" />
          </Link>
          </div>
-        {/* mobil-bar */}
 
-           <ul className='hidden md:flex gap-8'>
+           <ul className='hidden md:flex gap-8 text-xl'>
                 { links.map(({id,link})=>
                 <li  className='tracking-[.07em] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90' key={id}>
                   <Link to={link} smooth duration={500}>{link}</Link>
@@ -58,7 +58,7 @@ function NavBar() {
                 )
                 }
             </ul>
-
+          {/* mobil-bar */}
          <button onClick={fcOpen} className='md:hidden z-10 mr-2 '>
          {open?<RxCross2 size={30} color='#000000'/> :<HiOutlineBars3CenterLeft size={30} color='#f2f2f2'/>}
          </button>
@@ -71,7 +71,7 @@ function NavBar() {
         animate={{y:0}}
         transition={{delay: 0 , duration:1}}
         exit={{y:-800}}
-         className='md:hidden  absolute flex flex-col gap-10 top-0 right-0 h-screen  w-full justify-center items-center bg-gradient-home text-black py-10 '>
+         className='md:hidden  absolute flex flex-col  top-0 right-0 h-screen  w-full justify-center items-center bg-gradient-home text-black py-10 '>
 
             <ul className='text-center w-full'>
                  <div className='w-full h-[1px] bg-black'></div>
@@ -89,9 +89,9 @@ function NavBar() {
                  <div className='w-full h-[1px] bg-black'></div>
             </ul>
 
-            <div className='relative flex flex-col gap-8'>
+            <div className='relative flex flex-col pt-9'>
               <h3>ouattara.abraham@gmail.com</h3>
-                <div className='w-full flex justify-center gap-4'>
+                <div className='w-full flex justify-center pt-6'>
                 {
                 dataReseaux.map(({link,id,icon,delay})=>
                 <motion.a
@@ -99,7 +99,7 @@ function NavBar() {
                 animate={{y:0 , opacity:1}}
                 transition={{delay:delay , duration:.5}}
 
-                 className="p-2 bg-[#9c9c9cd4] rounded-full " key={id} href={link} target='blanc'>
+                 className="p-2 mx-2 bg-[#9c9c9cd4] rounded-full " key={id} href={link} target='blanc'>
                   {icon}
                 </motion.a>
                 )

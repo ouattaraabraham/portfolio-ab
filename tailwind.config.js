@@ -56,8 +56,8 @@ module.exports = {
       miroir:'miroir 3s linear',
       text:'text 30s linear infinite',
       temoignage:'temoignage 2s linear ',
-      rotate1:'rotate1 2s linear infinite',
-      rotate2:'rotate2 2s linear infinite reverse',
+      rotate1:'rotate1 3s linear infinite',
+      rotate2:'rotate2 3s linear infinite reverse',
       rotate3:'rotate3 2s linear infinite ',
 
 

@@ -8,9 +8,9 @@ import { FaCode } from "react-icons/fa6";
 
 
 function Plans() {
-const [open1,seOpen1]=useState(false) 
-const [open2,seOpen2]=useState(false) 
-const [open3,seOpen3]=useState(false) 
+const [open1,seOpen1]=useState(true) 
+const [open2,seOpen2]=useState(true) 
+const [open3,seOpen3]=useState(true) 
 
 
 const handler1=()=>{
@@ -78,7 +78,7 @@ const show3=open3?"block":"hidden"
             </div>
             <div className={`${show3} md:text-xl pb-2`}>
               <p >
-              En tant que développeur front-end , ma principale responsabilité est de développer le côté client d'un site Web. Cela implique la création et la mise en œuvre des éléments visuels avec lesquels les utilisateurs interagissent, tels que les boutons, les menus et les formulaires, à l'aide de HTML , CSS , JavaScript et des framwork tel que React , et diverse librairie utile pour le projet  .              </p>
+              En tant que développeur front-end , ma principale responsabilité est de développer le côté client d'un site Web. Cela implique la création et la mise en œuvre des éléments visuels avec lesquels les utilisateurs interagissent, tels que les boutons, les menus et les formulaires ect.. , à l'aide de HTML , CSS , JavaScript et des framwork tel que React , et diverse librairie utile pour le projet  .              </p>
             </div>
           </div>
           <div className='bg-slate-100 h-[1px]'></div>

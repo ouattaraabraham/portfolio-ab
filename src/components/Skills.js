@@ -20,8 +20,8 @@ const icons=[
         {id:0,name:"React",icon:<FaReact size={30} color='#02cae2'/>},
         {id:0,name:"Next js",icon:<TbBrandNextjs size={33} color='#02cae2'/>},
         {id:0,name:"Tree js",icon:<TbBrandThreejs size={30} color='#02cae2'/>},
-        {id:0,name:"Figma",icon:<LuFigma size={30} color='#02cae2'/>},
         {id:0,name:"Tailwind",icon:<SiTailwindcss size={33} color='#02cae2'/>},
+        {id:0,name:"Figma",icon:<LuFigma size={30} color='#02cae2'/>},
         {id:0,name:"github",icon:<FaGithub size={30} color='#02cae2'/>},
 
     ]
