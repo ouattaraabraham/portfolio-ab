@@ -1,7 +1,6 @@
 import About from "./components/About";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
-import Vector from "../src/assets/Vector1.svg"
 import Skills from "./components/Skills";
 import SessionConception from "./components/SessionConception";
 import Projets from "./components/Projets";
@@ -13,7 +12,7 @@ import Plans from "./components/Plans";
 
 function App() {
   return (
-    <div className="bg-gradient-home font-enraSlabVariable	">
+    <div className=" bg-[#c7c7c7]  font-SatoshiRegular	">
       <NavBar/>
       <Home/>
       <div className="bg-neutral-950 text-white">

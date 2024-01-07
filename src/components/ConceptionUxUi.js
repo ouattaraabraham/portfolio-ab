@@ -2,7 +2,7 @@ import React from 'react'
 import {  motion } from "framer-motion"
 // import { useLottie } from "lottie-react";
 // import AnimeFigma from '../video/Animation - 1700750403883.json'
-import Video from '../video/video2.mp4'
+import Video from '../video/video.mp4'
 
 
 function ConceptionUxUi() {
@@ -19,7 +19,7 @@ function ConceptionUxUi() {
 
   return (
 
-        <div  className='pt-36 md:pt-48 mx-auto max-w-[1200px] flex flex-col md:flex-row items-center'>
+        <div  className='pt-36 md:pt-48 mx-auto max-w-[1200px] items-center'>
           <motion.div
             variants={container}
             initial="initial"
@@ -28,12 +28,12 @@ function ConceptionUxUi() {
             viewport={{once:true}}
             custom={50}
            className='pb-2 md:leading-relaxed flex flex-col gap-2 items-center text-[7vw] sm:text-[5vw] xl:text-[4vw]'>
-          <div className=' md:w-full 2xl:text-[69.4px]'>
-            <span className='md:block md:pl-4 '>  UI Design  </span>
-            <span className='md:hidden'>/</span>
-            <span className='md:block '> UX Design</span>
+          <div className='text-center md:w-full 2xl:text-[69.4px]'>
+            <span className='md:block md:pl-4 '> UI/UX Design</span>
+            {/* <span className='md:hidden'>/</span>
+            <span className='md:block '> UX Design</span> */}
           </div>
-            <span className='md:pl-4 md:w-full text-nowrap'> Front end dev</span>
+            {/* <span className='md:pl-4 md:w-full text-nowrap'> Front end dev</span> */}
           </motion.div>
           <div className='flex justify-center overflow-hidden'>
             <div

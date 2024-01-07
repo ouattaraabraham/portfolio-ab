@@ -66,6 +66,7 @@ module.exports = {
 
 
     fontFamily:{
+      SatoshiRegular:'Satoshi-Regular',
       enraSlabVariable:'enra-slab-variable,sans-serif',
       signature:'Poppins',
       montrealI:'Montreal-italic',

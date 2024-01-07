@@ -2,14 +2,14 @@ import React from 'react'
 
 function About() {
   return (
-   <div  id='About' className='px-4 md:px-7 pt-20 md:pt-28 pb-12 flex justify-end '> 
+   <div  id='A propos' className='px-4 md:px-7 pt-20 md:pt-28 pb-12 flex justify-end '> 
     <div className='mx-auto'>
       <div className='flex justify-end max-w-screen-xl '>
-        <div className=' flex flex-col gap-5 md:max-w-[80%] lg:max-w-[69%] 	 '>
-          <div className=' md:hidden text-center'>
-              <h1 className='tracking-[.07em] text-[2.5rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold'>About</h1>
+        <div className=' flex flex-col  md:max-w-[80%] lg:max-w-[69%] 	 '>
+          <div className='pb-6 md:hidden text-center'>
+              <h1 className='tracking-[.07em] text-[2.2rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold'>Apropos</h1>
           </div>
-              <p className='text-justify	text-[1.3rem] sm:text-[1.5rem] leading-[1.4] lg:text-[1.7rem]  '>
+              <p className='text-justify	text-[1.2rem] sm:text-[1.5rem] lg:text-[1.7rem]  '>
               Bienvenue dans mon monde de développeur front-end professionnel . Je m'appelle Abraham Ouattara et je suis un développeur expérimenté spécialisé dans la création de solutions frontend de haute qualité, efficaces et visuellement attrayantes. Grâce à mon expertise, j'aide les entreprises et les organisations à atteindre leurs objectifs en ligne et à se démarquer dans le paysage numérique concurrentiel.
               </p>
               {/* <br />

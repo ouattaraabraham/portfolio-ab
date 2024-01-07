@@ -8,7 +8,7 @@ import { TbPointFilled } from "react-icons/tb";
 
 function Temoignage() {
 
-  const [temoin,seTemoin]=useState(1)
+  const [temoin,seTemoin]=useState(0)
 
   const handlerChange=(id,e)=>{
     seTemoin(id)
@@ -18,10 +18,10 @@ function Temoignage() {
   const data=[
     {
       id:0,
-      avatar: Avatar1,
-      temoignage:"C'est toujours un reel plaisir pour moi de travailler avec Abraham Ouattara qui a toujours été a la hauteur de mes attendement , c'est le genre de devellopeur qui sait realement ce qu'il fait",
-      name:"Pascal Tremblay",
-      activite:"( Creative Lead, Good Kind )",
+      avatar: Avatar3,
+      temoignage:"Abraham Ouattara a des qualités exeptionnel et sont devouhement pour les invensions lui permet de realiser les projets de grand anvergure qui ne sese d'etonné ",
+      name:"Dave Albert ",
+      activite:"( West Third Enterprises, Inc. )",
     },
     {
       id:1,
@@ -31,12 +31,14 @@ function Temoignage() {
       activite:"( CEO, West Third Enterprises, Inc. )",
     },
     {
-      id:3,
-      avatar: Avatar3,
-      temoignage:"Abraham Ouattara a des qualités exeptionnel et sont devouhement pour les invensions lui permet de realiser les projets de grand anvergure qui ne sese d'etonné ",
-      name:"Dave Albert ",
-      activite:"( West Third Enterprises, Inc. )",
+      
+      id:2,
+      avatar: Avatar1,
+      temoignage:"C'est toujours un reel plaisir pour moi de travailler avec Abraham Ouattara qui a toujours été a la hauteur de mes attendement , c'est le genre de devellopeur qui sait realement ce qu'il fait",
+      name:"Pascal Tremblay",
+      activite:"( Creative Lead, Good Kind )",
     },
+   
   ]
 
   let temoinCurent=data.filter(item=>item.id===temoin)
@@ -50,20 +52,18 @@ function Temoignage() {
         viewport={{once:true}}
         transition={{ duration:1}}
        className='text-center px-4 md:px-7 mx-auto flex flex-col items-center   max-w-xl '>
-          <h2 className='pb-10 font-bold text-lg md:text-2xl'>Testimonials</h2>
-
-          {/* <div ref={ref} className='animate-temoignage text-center flex flex-col pt-16 pb-6 gap-6 items-center'></div> */}
+          <h2 className='pb-10 font-bold text-md md:text-2xl'>Testimonials</h2>
 
           <div className='flex flex-col items-center pb-6'>
              <img className='w-16' src={temoinCurent[0].avatar} alt="profil" />
               <h3 className=' font-semibold	py-2'>
               {temoinCurent[0].name}
               </h3>
-              <p >
+              <p className=''>
               {temoinCurent[0].activite}
               </p>          
             </div>
-            <p className='md:text-xl pb-8'>
+            <p className='text-sm	md:text-xl pb-8'>
               {temoinCurent[0].temoignage}
             </p>
       

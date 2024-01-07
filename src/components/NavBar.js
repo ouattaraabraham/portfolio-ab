@@ -1,18 +1,17 @@
 import React ,{ useState } from 'react'
 import { Link } from 'react-scroll';
-import Profil from'../assets/avatar1.svg'
-import star from '../assets/Star 1.svg'
+import star from '../assets/Star.svg'
 import { motion , AnimatePresence } from "framer-motion"
-import { Bs1Circle } from "react-icons/bs";
 import { HiOutlineBars3CenterLeft } from "react-icons/hi2";
 import { RxCross2 } from "react-icons/rx";
 import { FaTwitter,FaSquareGithub } from "react-icons/fa6";
 import { AiFillInstagram } from "react-icons/ai";
 import { FaLinkedinIn } from "react-icons/fa";
+import { FaFacebookF } from "react-icons/fa";
 
 
 const dataReseaux=[
-    {id:0,delay:.4,reseau:"Twitter",link:"",icon:<FaTwitter size={23}/>},
+    {id:0,delay:.4,reseau:"Facebook",link:"https://web.facebook.com/AbwebDeveloperDesigne/",icon:<FaFacebookF size={23}/>},
     {id:1,delay:.6,reseau:"Instagram",link:"https://www.instagram.com/abrahamcodeur/",icon:<AiFillInstagram size={23}/>},
     {id:0,delay:.8,reseau:"LinkedinIn",link:"https://www.linkedin.com/in/abraham-ouattara-8ba4a522b/",icon:<FaLinkedinIn size={23}/>},
     {id:0,delay:1,reseau:"Github",link:"https://github.com/ouattaraabraham",icon:<FaSquareGithub size={23}/>},
@@ -30,8 +29,8 @@ function NavBar() {
     }
 
     const links=[
-        {id:1,link:'About'},
-        {id:2,link:'Skills'},
+        {id:1,link:'A propos'},
+        {id:2,link:'Project'},
         {id:3,link:'Contact'},
     ]
   return (
@@ -50,7 +49,7 @@ function NavBar() {
          </Link>
          </div>
 
-           <ul className='hidden md:flex gap-8 text-xl'>
+           <ul className='hidden md:flex gap-8 text-xl text-[white]'>
                 { links.map(({id,link})=>
                 <li  className='tracking-[.07em] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90' key={id}>
                   <Link to={link} smooth duration={500}>{link}</Link>
@@ -60,7 +59,7 @@ function NavBar() {
             </ul>
           {/* mobil-bar */}
          <button onClick={fcOpen} className='md:hidden z-10 mr-2 '>
-         {open?<RxCross2 size={30} color='#000000'/> :<HiOutlineBars3CenterLeft size={30} color='#f2f2f2'/>}
+         {open?<RxCross2 size={30} color='#000000'/> :<HiOutlineBars3CenterLeft size={30} color='white'/>}
          </button>
          
       <AnimatePresence>
@@ -71,19 +70,19 @@ function NavBar() {
         animate={{y:0}}
         transition={{delay: 0 , duration:1}}
         exit={{y:-800}}
-         className='md:hidden  absolute flex flex-col  top-0 right-0 h-screen  w-full justify-center items-center bg-gradient-home text-black py-10 '>
+         className='md:hidden  absolute flex flex-col  top-0 right-0 h-screen  w-full justify-center items-center  bg-[#c7c7c7] text-black py-10 '>
 
             <ul className='text-center w-full'>
                  <div className='w-full h-[1px] bg-black'></div>
-                 <li className='tracking-[.07em] text-[2.75rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90 ' >
-                <Link onClick={fcOpen}  to='About' smooth duration={500}>About</Link>
+                 <li className='tracking-[.07em] text-[2.6rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90 ' >
+                <Link onClick={fcOpen}  to='A propos' smooth duration={500}>A propos</Link>
                  </li>
                  <div className='w-full h-[1px] bg-black'></div>
-                 <li className='tracking-[.07em] text-[2.75rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90 ' >
-                  <Link onClick={fcOpen}  to='Skills' smooth duration={500}>Skills</Link>
+                 <li className='tracking-[.07em] text-[2.6rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90 ' >
+                  <Link onClick={fcOpen}  to='Project' smooth duration={500}>Project</Link>
                  </li>
                  <div className='w-full h-[1px] bg-black'></div>
-                 <li className='tracking-[.07em] text-[2.75rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90 ' >
+                 <li className='tracking-[.07em] text-[2.6rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold py-5  hover:cursor-pointer hover:scale-90 ' >
                   <Link onClick={fcOpen}  to='Contact' smooth duration={500}>Contact</Link>
                  </li>
                  <div className='w-full h-[1px] bg-black'></div>

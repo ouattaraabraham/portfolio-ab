@@ -35,7 +35,7 @@ const show3=open3?"block":"hidden"
     <div className='px-4 md:px-7 pb-32'>
       <div  className='flex flex-col'>
         <div className='flex items-center gap-2 mb-5'>
-          <h2 className='tracking-[.07em] text-[2.5rem] md:text-[3rem] lg:text-[3.25rem] font-montrealI font-semibold'>Pestation</h2>
+          <h2 className='tracking-[.07em]  text-[2.2rem] md:text-[2.5rem] lg:text-[3rem] font-montrealI font-semibold'>Pestation</h2>
           <span className='pt-2'>
           <CgCornerRightDown size={35}/>
           </span>

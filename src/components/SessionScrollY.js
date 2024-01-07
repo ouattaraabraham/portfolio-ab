@@ -5,12 +5,11 @@ import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 // import projet1 from '../assets/prj1.jpg'
 // import projet2 from '../assets/projet2.png'
 
-import Img1 from '../assets/img2.jpg'
-import Img2 from '../assets/landingPage2.jpg'
-import Img3 from '../assets/landingPage4.jpg'
-import Img4 from '../assets/landingPage1.jpg'
-import Img5 from '../assets/landingPage3.jpg'
-import Img6 from '../assets/landingPage5.jpg'
+import Img1 from '../assets/landingPage-1.jpg'
+import Img2 from '../assets/landingPage-2.jpg'
+import Img3 from '../assets/landingPage-3.jpg'
+import Img4 from '../assets/landingPage-4.jpg'
+import Img5 from '../assets/landingPage-5.jpg'
 
 
 const dataImg=[Img1,Img2,Img3,Img4,Img5,]
@@ -42,7 +41,7 @@ function SessionScrollY() {
        return ()=>{
          pin.kill()
        }     
-    },[])
+    },[media])
   return (
        <section  className='overflow-hidden px-4 md:px-7 md:my-12'>
         
