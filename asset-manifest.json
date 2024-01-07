@@ -1,10 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.ca43ec45.css",
-    "main.js": "/static/js/main.78f070ca.js",
+    "main.css": "/static/css/main.d143f13b.css",
+    "main.js": "/static/js/main.85cc99a3.js",
     "static/media/video.mp4": "/static/media/video.dad91eb2c2ed72424082.mp4",
     "static/media/landingPage-3.jpg": "/static/media/landingPage-3.b3abab6e7530067bcb29.jpg",
-    "static/media/hero.png": "/static/media/hero.1fe72fb144c0585fe183.png",
     "static/media/landingPage-1.jpg": "/static/media/landingPage-1.bec495e557edac96db7f.jpg",
     "static/media/landingPage-5.jpg": "/static/media/landingPage-5.a6139b45d1e1882caa2d.jpg",
     "static/media/landingPage-2.jpg": "/static/media/landingPage-2.8dbd78f6f97f6112d8b5.jpg",
@@ -12,6 +11,7 @@
     "static/media/landing-3.jpg": "/static/media/landing-3.900eff444598e58f4da0.jpg",
     "static/media/landing-4.jpg": "/static/media/landing-4.de1e1386026eaa4173ec.jpg",
     "static/media/vs-code.png": "/static/media/vs-code.4a732f1400ba30da7570.png",
+    "static/media/hero-1.jpg": "/static/media/hero-1.eb2b6d18fa66f676f886.jpg",
     "static/media/PPNeueMontreal-SemiBolditalic.otf": "/static/media/PPNeueMontreal-SemiBolditalic.ef9ee1837108053b9463.otf",
     "static/media/PPNeueMontreal-Medium.otf": "/static/media/PPNeueMontreal-Medium.0f34f4714f1b26e0dedc.otf",
     "static/media/avatar2.svg": "/static/media/avatar2.678a68e196e6ad1603c5cdadf9a1ad92.svg",
@@ -21,11 +21,11 @@
     "static/media/avatar1.svg": "/static/media/avatar1.12b4c5fbad07cdbb1a0c354b43c94365.svg",
     "static/media/Star.svg": "/static/media/Star.9400b2d6d162323e6c1b7a05e6745f2a.svg",
     "index.html": "/index.html",
-    "main.ca43ec45.css.map": "/static/css/main.ca43ec45.css.map",
-    "main.78f070ca.js.map": "/static/js/main.78f070ca.js.map"
+    "main.d143f13b.css.map": "/static/css/main.d143f13b.css.map",
+    "main.85cc99a3.js.map": "/static/js/main.85cc99a3.js.map"
   },
   "entrypoints": [
-    "static/css/main.ca43ec45.css",
-    "static/js/main.78f070ca.js"
+    "static/css/main.d143f13b.css",
+    "static/js/main.85cc99a3.js"
   ]
 }
