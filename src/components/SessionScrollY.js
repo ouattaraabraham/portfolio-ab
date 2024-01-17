@@ -6,10 +6,11 @@ import {ScrollTrigger} from 'gsap/dist/ScrollTrigger'
 // import projet2 from '../assets/projet2.png'
 
 import Img1 from '../assets/landingPage-1.jpg'
-import Img2 from '../assets/landingPage-2.jpg'
-import Img3 from '../assets/landingPage-3.jpg'
-import Img4 from '../assets/landingPage-4.jpg'
-import Img5 from '../assets/landingPage-5.jpg'
+import Img2 from '../assets/im17.jpg'
+import Img3 from '../assets/im6.jpg'
+import Img4 from '../assets/im12.png'
+import Img5 from '../assets/im10.jpg'
+
 
 
 const dataImg=[Img1,Img2,Img3,Img4,Img5,]
@@ -43,12 +44,10 @@ function SessionScrollY() {
        }     
     },[media])
   return (
-       <section  className='overflow-hidden px-4 md:px-7 md:my-12'>
-        
+       <section  className='overflow-hidden px-5 md:px-7 md:my-12'>
          <div ref={triggerRef} >
-     
+         <div name='designer' className='absolute h-screen lg:hidden'><p className='relative top-[20%] text-nowrap text-4xl sm:text-5xl'>UI/UX Designer</p></div>
             <div ref={selectRef} className='w-[3000px] md:w-fit h-screen flex items-center overflow-hidden'>
-                
                 {
                   dataImg.map((item,id)=>
                   <div key={id} className=' w-[282px] h-[225px]  md:w-[560px] md:h-[454px]  pr-6 md:pr-10'>

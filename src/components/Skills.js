@@ -27,7 +27,7 @@ const icons=[
     ]
   return (
 
-  <div id='Skills' className='py-10 px-4 md:px-7 '>
+  <div id='Skills' className='pt-4 sm:px-10 pb-10 md:py-10 px-5 md:px-7 '>
 
     <div className='max-w-screen-xl	 mx-auto'>
      <motion.h2

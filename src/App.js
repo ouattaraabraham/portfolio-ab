@@ -2,23 +2,23 @@ import About from "./components/About";
 import Home from "./components/Home";
 import NavBar from "./components/NavBar";
 import Skills from "./components/Skills";
-import SessionConception from "./components/SessionConception";
 import Projets from "./components/Projets";
 import Temoignage from "./components/Temoignage";
 import MeContacter from "./components/MeContacter";
 import Footer from "./components/Footer";
 import SessionScrollY from "./components/SessionScrollY";
 import Plans from "./components/Plans";
+import AnimeTxt from "./components/AnimeTxt";
 
 function App() {
   return (
-    <div className=" bg-[#c7c7c7]  font-SatoshiRegular	">
+    <div className=" bg-[#1a1a1a] text-white  font-SatoshiRegular	">
       <NavBar/>
       <Home/>
-      <div className="bg-neutral-950 text-white">
+      <div >
         <About/>
-        <Skills/>
-        <SessionConception/>
+        {/* <Skills/> */}
+        {/* <AnimeTxt/> */}
         <SessionScrollY/>
         <Projets/>
         <Temoignage/>
